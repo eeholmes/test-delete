@@ -1,7 +1,7 @@
 {
   "name": "test",
   "workspaceFolder": "/home/jovyan",
-  "image": "ghcr.io/nmfs-opensci/container-images/py-rocket-geospatial",
+  "image": "ghcr.io/nmfs-opensci/container-images/py-rocket-base:4.4-3.10",
   "hostRequirements": {
     "cpus": "2"
   },
