@@ -1,7 +1,11 @@
 {
   "name": "test",
   "workspaceFolder": "/home/jovyan",
-  "image": "ghcr.io/nmfs-opensci/container-images/py-rocket-base:4.4-3.10",
+  "build": {
+		"dockerfile": "Dockerfile",
+		"args": { "COPY_CONTEXT": "." }
+	},
+	"overrideCommand": false,
   "hostRequirements": {
     "cpus": "2"
   },
