@@ -1,7 +1,7 @@
 {
   "name": "test",
   "workspaceFolder": "/home/jovyan",
-  "build": { "dockerfile": "Dockerfile", },
+  "dockerFile": "Dockerfile",
   "hostRequirements": {
     "cpus": "2"
   },
