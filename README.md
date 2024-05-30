@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/github/repo/main)
+
 
 ## EDMW 2024 - Workshop 3B: Introduction to using earth data in the cloud for scientific workflows
 
