@@ -1,11 +1,7 @@
 {
   "name": "test",
   "workspaceFolder": "/home/jovyan",
-  "build": {
-		"dockerfile": "Dockerfile",
-		"args": { "COPY_CONTEXT": "." }
-	},
-	"overrideCommand": false,
+  "build": { "dockerfile": "Dockerfile", },
   "hostRequirements": {
     "cpus": "2"
   },
