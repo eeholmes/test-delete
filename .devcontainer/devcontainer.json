@@ -1,10 +1,7 @@
 {
   "name": "test",
   "workspaceFolder": "/home/jovyan",
-  "dockerFile": "Dockerfile",
-  "settings": {
-    "remote.autoForwardPorts": true
-  },
+  "image": "ghcr.io/nmfs-opensci/container-images/py-rocket-base:4.4-3.10",
   "hostRequirements": {
     "cpus": "2"
   },
@@ -13,14 +10,21 @@
       "extensions": [
         "ms-toolsai.jupyter",
         "ms-python.python",
+        "reditorsupport.r",
+        "esbenp.prettier-vscode",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.cpptools"
       ]
     }
   },
+  "forwardPorts": [
+    8889
+  ],
   "portsAttributes": {
-    "8889": {
-      "label": "Jupyter Lab - py-rocket-base",
-      "onAutoForward": "openBrowser"
+    "8888": {
+      "label": "Jupyter Lab",
+      "onAutoForward": "openPreview"
     }
   },
-  "postCreateCommand": "jupyter lab --ip=0.0.0.0 --port=8889 --allow-root --NotebookApp.token='' --NotebookApp.password=''"
+  "postCreateCommand": "jupyter lab --ip=0.0.0.0 --port=8889 --allow-root --no-browser --NotebookApp.token='' --NotebookApp.password=''"
 }
