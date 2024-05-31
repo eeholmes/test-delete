@@ -18,12 +18,13 @@ RUN pip install --upgrade --no-deps --force-reinstall --no-cache-dir git+https:/
     }
   },
   "forwardPorts": [
-    8888
+    8889
   ],
   "portsAttributes": {
-    "8888": {
+    "8889": {
       "label": "Jupyter Lab - py-rocket-base",
-      "onAutoForward": "openPreview"
+      "onAutoForward": "openBrowser"
     }
   },
+  "postCreateCommand": "jupyter lab --ip=0.0.0.0 --port=8889 --allow-root --NotebookApp.token='' --NotebookApp.password=''"
 }
