@@ -2,6 +2,9 @@
   "name": "test",
   "workspaceFolder": "/home/jovyan",
   "dockerFile": "Dockerfile",
+  "settings": {
+    "remote.autoForwardPorts": true
+  },
   "hostRequirements": {
     "cpus": "2"
   },
