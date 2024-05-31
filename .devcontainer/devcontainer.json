@@ -13,14 +13,11 @@
       ]
     }
   },
-  "forwardPorts": [
-    8889
-  ],
   "portsAttributes": {
-    "8889": {
+    "8888": {
       "label": "Jupyter Lab - py-rocket-base",
       "onAutoForward": "openBrowser"
     }
   },
-  "postCreateCommand": "jupyter lab --ip=0.0.0.0 --port=8889 --allow-root --NotebookApp.token='' --NotebookApp.password=''"
+  "postCreateCommand": "jupyter lab --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token='' --NotebookApp.password=''"
 }
